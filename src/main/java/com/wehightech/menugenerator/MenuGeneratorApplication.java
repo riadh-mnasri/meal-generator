@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NgMenuGeneratorApplication {
+public class MenuGeneratorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NgMenuGeneratorApplication.class, args);
+		SpringApplication.run(MenuGeneratorApplication.class, args);
 	}
 }
