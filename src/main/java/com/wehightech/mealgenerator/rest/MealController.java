@@ -1,7 +1,7 @@
-package com.wehightech.menugenerator.rest;
+package com.wehightech.mealgenerator.rest;
 
-import com.wehightech.menugenerator.domain.Meal;
-import com.wehightech.menugenerator.repository.MealRepository;
+import com.wehightech.mealgenerator.domain.Meal;
+import com.wehightech.mealgenerator.repository.MealRepository;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 

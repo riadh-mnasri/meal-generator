@@ -1,6 +1,6 @@
-package com.wehightech.menugenerator.repository;
+package com.wehightech.mealgenerator.repository;
 
-import com.wehightech.menugenerator.domain.Meal;
+import com.wehightech.mealgenerator.domain.Meal;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;

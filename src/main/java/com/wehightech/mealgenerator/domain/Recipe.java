@@ -1,4 +1,4 @@
-package com.wehightech.menugenerator.domain;
+package com.wehightech.mealgenerator.domain;
 
 import java.util.List;
 
