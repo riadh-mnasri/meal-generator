@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng-menu-generator App', () => {
+describe('meal-generator App', () => {
   let page: AppPage;
 
   beforeEach(() => {

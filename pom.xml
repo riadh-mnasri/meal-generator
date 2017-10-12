@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wehightech</groupId>
-	<artifactId>ng-menu-generator</artifactId>
+	<artifactId>meal-generator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ng-menu-generator</name>
-	<description>Menu generator app with Angular 4</description>
+	<name>meal-generator</name>
+	<description>Meal generator app with Angular 4</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
