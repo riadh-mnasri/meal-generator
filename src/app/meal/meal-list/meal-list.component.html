@@ -1,16 +1,16 @@
   <div class="col-md-12 pl-0" *ngIf="meals.length > 0">
 <!--    <img src="/assets/images/Saumon-grille-a-loseille.jpg">-->
     <table class="table table-responsive" width="100%">
-      <thead>
+<!--      <thead>
       <tr>
         <th align="left" width="10%">Id</th>
         <th align="left" width="90%">Meal Name</th>
       </tr>
-      </thead>
+      </thead>-->
       <tbody>
       <tr *ngFor="let meal of meals">
-        <th valign="top" align="left" width="10%" scope="row">{{meal.id}}</th>
-        <td valign="top" align="left" width="90%">{{meal.name}}<br><img src="{{meal.imageUrl}}"></td>
+        <!--<th valign="top" align="left" width="10%" scope="row">{{meal.id}}</th>-->
+        <td valign="top" align="left" width="100%">{{meal.name}}<br><img src="{{meal.imageUrl}}"></td>
       </tr>
       </tbody>
     </table>
