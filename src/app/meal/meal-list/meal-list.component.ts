@@ -1,42 +1,34 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-
 import {Subscription} from 'rxjs/Rx';
+import {MealService} from "../meal.service";
 
 @Component({
   selector: 'my-meals',
   templateUrl: './meal-list.component.html',
   styleUrls: ['./meal-list.component.scss']
 })
-export class MealListComponent implements OnInit, OnDestroy {
+export class MealListComponent implements OnInit {
   meals: Array<any> = [];
-  eventSubscriber: Subscription;
 
-  constructor() {
+  constructor(private mealService: MealService) {
   }
 
   ngOnInit() {
     this.loadAll();
-    this.registerChangeInCampaigns();
+    console.log(this.meals);
   }
 
   loadAll() {
-    this.campaignService.findAllCampaigns().subscribe(
-      (res) => this.campaigns = res,
+    this.mealService.findAllMeals().subscribe(
+      (res) => this.meals = res,
       (error) => console.log(error)
     );
   }
 
-  deleteCampaign(id: number) {
-    this.campaignService.delete(id).subscribe((response) => {
+  deleteMeal(id: number) {
+    this.mealService.delete(id).subscribe((response) => {
       this.loadAll();
     });
   }
 
-  registerChangeInCampaigns() {
-    this.eventSubscriber = this.eventManager.subscribe('campaignListModification', (response) => this.loadAll());
-  }
-
-  ngOnDestroy() {
-    this.eventManager.destroy(this.eventSubscriber);
-  }
 }
